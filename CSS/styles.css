@@ -1,0 +1,3 @@
+p {
+    color: blue;
+}li:nth-of-type(n + 2) {color: red; } 
