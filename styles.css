@@ -1,3 +1,15 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+.container {
+    width: 901px;
+    margin: 0 auto;
+}
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -5,3 +17,85 @@
     height: 1px;
     margin: -1px;
   }
+  body {
+      font-family: "Playfair Display", "Arial", "sans-serif";
+      color: #626262;
+      font-size: 14px;
+      line-height: 24px;
+  }
+  .style-part {
+      font-size: 30px;
+      line-height: 36px;
+  }
+  .page-title {
+      font-family: "Ubuntu", "Arial", "sans-serif";
+      color: #b4ad9e;
+      line-height: 17px;
+      text-transform: uppercase;
+  }
+  .main-body {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      text-align: justify;
+  }
+  
+
+  /* site navigation */
+  .site-navigation li {
+      display: inline-block;
+  }
+  .site-navigation li:not(:last-child) {
+      margin-right: 123px;
+  }
+
+.site-navigation {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.site-navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #626262;
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+      color: #b8dffb;
+  }
+  img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
+
+
+  .style-item-type {
+      width: 421px;
+      display: inline-block;
+  }
+.style-item-type:nth-child(5n) {
+    margin-right: 55px;
+}
+.main-nav {
+    padding: 73px;
+}
+
+/* style button */
+.load-btn {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 164px;
+    height: 59px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #626262;
+    background-color: initial;
+    border: 2px solid #626262;
+}
+.button {
+    text-align: center;
+    padding: 57px;
+}
