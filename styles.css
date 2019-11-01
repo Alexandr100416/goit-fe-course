@@ -21,29 +21,44 @@ html {
       font-family: "Playfair Display", "Arial", "sans-serif";
       color: #626262;
       font-size: 14px;
-      line-height: 24px;
+      line-height: 17px;
   }
   .style-part {
       font-size: 30px;
       line-height: 36px;
+      margin: 0;
+      padding: 29px 0px;
   }
   .page-title {
       font-family: "Ubuntu", "Arial", "sans-serif";
       color: #b4ad9e;
-      line-height: 17px;
+      line-height: 14px;
       text-transform: uppercase;
+      font-size: 14px;
+      margin: 0;
+      padding: 30px 0px 0px;
+  }
+  .text-contetnt-style {
+    color: #626262;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0;
   }
   .main-body {
       list-style: none;
-      margin: 0px;
+      margin: 0;
       padding: 0px;
       text-align: justify;
+      font-size: 0px;
   }
   
 
   /* site navigation */
   .site-navigation li {
       display: inline-block;
+      font-size: 14px;
+      line-height: 24px;
+      color: #626262;
   }
   .site-navigation li:not(:last-child) {
       margin-right: 123px;
@@ -51,14 +66,16 @@ html {
 
 .site-navigation {
     list-style: none;
-    margin: 0px;
+    margin: 0;
     padding: 0px;
     text-align: center;
+    font-size: 0;
 }
 .site-navigation a {
     text-transform: uppercase;
     text-decoration: none;
     color: #626262;
+    display: block;
 }
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -74,6 +91,7 @@ html {
   .style-item-type {
       width: 421px;
       display: inline-block;
+      margin: 0;
   }
 .style-item-type:nth-child(5n) {
     margin-right: 55px;
@@ -81,11 +99,13 @@ html {
 .main-nav {
     padding: 73px;
 }
-
+.main-menu-item {
+    margin: 0;
+}
 /* style button */
 .load-btn {
     border: none;
-    margin: 0px;
+    margin: 0;
     padding: 0px;
     width: 164px;
     height: 59px;
@@ -93,9 +113,13 @@ html {
     line-height: 24px;
     color: #626262;
     background-color: initial;
-    border: 2px solid #626262;
+    border: 2px solid #626262;   
 }
-.button {
-    text-align: center;
-    padding: 57px;
+
+.load-btn:hover {
+    display: block;
+    position: absolute;
+}
+.load-btn{
+    margin: 56px 359px;
 }
