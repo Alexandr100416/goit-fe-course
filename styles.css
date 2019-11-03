@@ -27,7 +27,9 @@ html {
       font-size: 30px;
       line-height: 36px;
       margin: 0;
-      padding: 29px 0px;
+      padding-top: 0;
+      margin-top: 29px;
+      margin-bottom: 41px;
   }
   .page-title {
       font-family: "Ubuntu", "Arial", "sans-serif";
@@ -36,7 +38,8 @@ html {
       text-transform: uppercase;
       font-size: 14px;
       margin: 0;
-      padding: 30px 0px 0px;
+      margin-bottom: 31px;
+      
   }
   .text-contetnt-style {
     color: #626262;
@@ -92,7 +95,12 @@ html {
       width: 421px;
       display: inline-block;
       margin: 0;
+      margin-bottom: 141px;
   }
+.style-item-type img {
+    margin-bottom: 30px;
+}
+
 .style-item-type:nth-child(5n) {
     margin-right: 55px;
 }
@@ -105,21 +113,22 @@ html {
 /* style button */
 .load-btn {
     border: none;
-    margin: 0;
-    padding: 0px;
+    padding: 0;
     width: 164px;
     height: 59px;
     font-size: 20px;
     line-height: 24px;
     color: #626262;
     background-color: initial;
-    border: 2px solid #626262;   
+    border: 2px solid #626262;
+    margin: 0 auto;
 }
+
 
 .load-btn:hover {
     display: block;
-    position: absolute;
+    position: absolute;   
 }
-.load-btn{
-    margin: 56px 359px;
+.slyle button {
+    margin:0 357px 0;
 }
