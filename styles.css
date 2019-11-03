@@ -53,6 +53,7 @@ html {
       padding: 0px;
       text-align: justify;
       font-size: 0px;
+      margin-bottom: 55px;
   }
   
 
@@ -97,6 +98,7 @@ html {
       margin: 0;
       margin-bottom: 141px;
   }
+
 .style-item-type img {
     margin-bottom: 30px;
 }
@@ -130,5 +132,8 @@ html {
     position: absolute;   
 }
 .slyle button {
-    margin:0 357px 0;
+    margin: 0 357px 0;
+}
+.slyle {
+    padding-bottom: 71px;
 }
