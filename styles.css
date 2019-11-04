@@ -127,11 +127,6 @@ html {
     margin: 0 auto;
 }
 
-
-.load-btn:hover {
-    display: block;
-    position: absolute;   
-}
 .slyle button {
     margin: 0 357px 0;
 }
