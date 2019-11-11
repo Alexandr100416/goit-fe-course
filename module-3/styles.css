@@ -1,0 +1,134 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+.container {
+    width: 901px;
+    margin: 0 auto;
+}
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+  body {
+      font-family: "Playfair Display", "Arial", "sans-serif";
+      color: #626262;
+      font-size: 14px;
+      line-height: 17px;
+  }
+  .style-part {
+      font-size: 30px;
+      line-height: 36px;
+      margin: 0;
+      margin-bottom: 41px;
+  }
+  .page-title {
+      font-family: "Ubuntu", "Arial", "sans-serif";
+      color: #b4ad9e;
+      line-height: 14px;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin: 0;
+      margin-bottom: 31px;
+      
+  }
+  .text-contetnt-style {
+    color: #626262;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0;
+  }
+  .main-body {
+      list-style: none;
+      margin: 0;
+      padding: 0px;
+      text-align: justify;
+      font-size: 0px;
+      margin-bottom: 55px;
+  }
+  
+
+  /* site navigation */
+  .site-navigation li {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 24px;
+      color: #626262;
+  }
+  .site-navigation li:not(:last-child) {
+      margin-right: 123px;
+  }
+
+.site-navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+    font-size: 0;
+}
+.site-navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #626262;
+    display: block;
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+      color: #b8dffb;
+  }
+  img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
+
+
+  .style-item-type {
+      width: 420px;
+      display: inline-block;
+      margin: 0;
+      margin-bottom: 141px;
+  }
+  .style-item-type:nth-last-child(-n+ 2){
+    margin-bottom: 0;
+    }
+
+.style-item-type img {
+    margin-bottom: 30px;
+}
+
+.style-item-type:nth-child(5n) {
+    margin-right: 55px;
+}
+.main-nav {
+    padding: 73px;
+}
+.main-menu-item {
+    margin: 0;
+}
+/* style button */
+.load-btn {
+    border: none;
+    padding: 0;
+    width: 164px;
+    height: 59px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #626262;
+    background-color: initial;
+    border: 2px solid #626262;
+    margin: 0 auto;
+}
+.slyle button {
+    margin: 0 357px 0;
+}
+.slyle {
+    padding-bottom: 71px;
+}
