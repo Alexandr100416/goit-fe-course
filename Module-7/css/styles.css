@@ -179,6 +179,100 @@ background-image: url(../img/basket.png);
 .services__list-item:nth-child(3)::before {
     background-image: url(../img/lock.png);
 }
+.services {
+    background-image: url();
+    padding-bottom: 120px;
+}
+/* MAIN-SECTION-CONTACT */
+.contact {
+    background-color: #222222;
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat;
+    padding-bottom: 120px;
+}
+.sections-title-contact {
+    font-family: "MontserratB";
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 22px;
+    color: #ffffff;
+    padding-top: 110px;
+}
+.contact__form {
+    width: 940px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.line {
+    display: flex;
+    flex-direction: column;
+}
+.contact__form-input:not(:last-child) {
+    margin-bottom: 30px;
+}
+.contact__form-input {
+    font-family: "MontserratB";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #bbbbbb;
+    width: 450px;
+    height: 50px;
+    margin-right: 30px;
+    padding: 0 20px;
+}
+
+.contact__form-textarea {
+    font-family: "MontserratB";
+    font-size: 14px;
+    width: 455px;
+    height: 210px;
+    resize: none;
+    text-transform: uppercase;
+    padding: 20px 0 0 20px;
+}
+.contact__form-input:focus {
+    outline: none;
+}
+.contact__form-input[required]:focus:valid {
+    border: 2px solid green;
+}
+
+.contact__form-input[required]:focus:invalid {
+    border: 2px solid red;
+}
+.contact__form-textarea:focus {
+    outline: none;
+}
+.contact__form-textarea[required]:focus:valid {
+    border: 2px solid green;
+}
+
+.contact__form-textarea[required]:focus:invalid {
+    border: 2px solid red;
+}
+.contact__form-btn {
+    font-family: "MontserratB";
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 240px;
+    height: 60px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #fed136;
+
+}
+.contact__form-btn-wrapper {
+    margin-top: 30px;
+    padding: 0 350px;
+}
+
 
 
 
