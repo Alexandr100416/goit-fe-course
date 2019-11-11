@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+
+}
+.header__list {
+    display: flex;
+    min-width: 490px;
+    justify-content: space-between;
+}
+.logo {
+    font-family: "wisdom-script";
+    font-size: 26px;
+    color: #fed136;
+}
+@font-face {
+    font-family: "wisdom-script";
+    src: local("wisdom-script"), local("wisdom-script"),
+    url(../fonts/wisdom-script-al.woff) format("woff"),
+    url(../fonts/wisdom-script-al.woff2) format("woff2")
+}
+@font-face {
+font-family: "montserrat";
+src: local("montserrat"), local("montserrat"), local("montserrat"), local("montserrat"),
+url(../fonts/montserrat-latin_cyrillic-900.woff) format("woff"),
+url(../fonts/montserrat-latin_cyrillic-900.woff2) format("woff2"),
+url(../fonts/montserrat-latin_cyrillic-regular.woff) format("woff"),
+url(../fonts/montserrat-latin_cyrillic-regular.woff2) format("woff2");
+}
