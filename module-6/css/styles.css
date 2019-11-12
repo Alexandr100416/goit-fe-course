@@ -112,33 +112,30 @@ ol {
 
     }
     .services__list-item {
+        display: list-item;
         width: 380px;
-    }
-    .services__list-item::before {
-        display: block;
-        content: "";
-        width: 85px;
-        height: 70px;
-        margin: 0 auto;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: left top;
+        padding-left: 90px;
+        margin-bottom: 100px;
     }
-    .services__list-item:first-child::before {
+    
+    .services__list-item:first-child {
         background-image: url(/img/clock.png); 
     }
-    .services__list-item:nth-child(2)::before {
+    .services__list-item:nth-child(2) {
         background-image: url(/img/line.png); 
     }
-    .services__list-item:nth-child(3)::before {
+    .services__list-item:nth-child(3) {
         background-image: url(/img/watch.png); 
     }
-    .services__list-item:nth-child(4)::before {
+    .services__list-item:nth-child(4) {
         background-image: url(/img/book.png); 
     }
-    .services__list-item:nth-child(5)::before {
+    .services__list-item:nth-child(5) {
         background-image: url(/img/home.png); 
     }
-    .services__list-item:nth-child(6)::before {
+    .services__list-item:nth-child(6) {
         background-image: url(/img/frame.png); 
     }
     .services__list-item:last-child {
@@ -243,14 +240,38 @@ justify-content: space-between;
 
 .text-site-information {
     height: 65px;
+    display: flex;
+    justify-content: space-between;
 }
 .home-element {
     font-family: "Montserrat";
     font-size: 14px;
     font-weight: 300;
     text-align: center;
-    color: #46bfa9;
+    color: #f38181;
 }
+.button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 150px;
+    height: 40px;
+    background-color: #95e1d3;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    
+}
+.email {
+    width: 230px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
 
 
 
