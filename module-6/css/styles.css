@@ -123,23 +123,23 @@ ol {
         
     }
     .services__list-item:first-child {
-        background-image: url(/clock.png); 
+        background-image: url(/icons/clock.png); 
         margin-bottom: 100px;
     }
     .services__list-item:nth-child(2) {
-        background-image: url(/line.png); 
+        background-image: url(/icons/line.png); 
     }
     .services__list-item:nth-child(3) {
-        background-image: url(/watch.png); 
+        background-image: url(/icons/watch.png); 
     }
     .services__list-item:nth-child(4) {
-        background-image: url(/book.png); 
+        background-image: url(/icons/book.png)
     }
     .services__list-item:nth-child(5) {
-        background-image: url(/home.png); 
+        background-image: url(/icons/home.png); 
     }
     .services__list-item:nth-child(6) {
-        background-image: url(/frame.png); 
+        background-image: url(/icons/frame.png); 
     }
     .services__list-item:last-child {
         margin-right: 0;
