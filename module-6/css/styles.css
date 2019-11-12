@@ -29,6 +29,9 @@ ol {
     margin: 0 auto;
 }
 /*  HEADER-navigation */
+.header {
+    margin-bottom: 50px;
+}
 .logo {
     font-family: "Montserrat", Arial, sans-serif ;
     font-size: 30px;
