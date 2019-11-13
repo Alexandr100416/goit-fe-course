@@ -51,6 +51,8 @@ ol {
 }
 /* HEADER */
 .header {
+    display: block;
+    margin: 0 auto;
     background-image: url(/img/fo.png);
     background-repeat: no-repeat;
     background-position: center top;
@@ -176,3 +178,37 @@ ol {
     border-radius: 30px;
     margin-bottom: 58px;
 }
+.team__list-item {
+    position: relative;
+}
+.team__list-item::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 90px;
+    right: 70px;
+    
+}
+.team__list-item:nth-child(1)::after {
+    background-image: url(/img/tv.png);
+    background-color: #ff4e50;
+}
+.team__list-item:nth-child(2)::after {
+    background-image: url(/img/bulb.png);
+    background-color: #ffa507;
+}
+.team__list-item:nth-child(3)::after {
+    background-image: url(/img/coffee.png);
+    background-color: #1cd7ad;
+}
+.team__list-item:nth-child(4)::after {
+    background-image: url(/img/air.png);
+    background-color: #4e73db;
+}
+
