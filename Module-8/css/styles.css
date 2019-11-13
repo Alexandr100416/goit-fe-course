@@ -94,7 +94,6 @@ ol {
     font-weight: 700;
     font-family: "MontserratB", Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    margin-bottom: 32px;
 }
 .sub-title {
     text-align: center;
@@ -300,7 +299,34 @@ ol {
           margin: 0 auto;
           margin-bottom: 40px;
       }
+}
 
-    
-
+@media (min-width: 1300px) {
+    .header {
+        margin: 0;
+        margin-bottom: 72px;
+    }
+    .container {
+        width: 940px;
+    }
+    .sub-title {
+        margin: 0;
+        margin-bottom: 38px;
+    }
+    .header__subtitle {
+        font-size: 24px;
+        margin: 0;
+        margin-bottom: 38px;
+    }
+    .header__btn {
+        width: 228px;
+        height: 44px;
+    }
+    .sections-title {
+        margin: 0;
+        margin-bottom: 35px;
+    }
+.team__list-item {
+    width: 220px;
+}
 }
