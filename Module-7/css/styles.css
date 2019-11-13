@@ -189,6 +189,7 @@ background-image: url(../img/basket.png);
     background-image: url(../img/map.png);
     background-repeat: no-repeat;
     padding-bottom: 120px;
+    background-position: right;
 }
 .sections-title-contact {
     font-family: "MontserratB";
