@@ -305,6 +305,7 @@ ol {
     .header {
         margin: 0;
         margin-bottom: 72px;
+        background-image: url(/img/fondesktop.png);
     }
     .container {
         width: 940px;
