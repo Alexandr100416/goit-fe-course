@@ -25,6 +25,7 @@ html {
 }
 
 a {
+    display: block;
     text-decoration: none;
 }
 
@@ -57,7 +58,6 @@ ol {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    width: 320px;
     height: 540px;
     margin-bottom: 70px;
 }
@@ -130,6 +130,11 @@ ol {
     border: 2px solid #ff4e50;
     border-radius: 30px;
 }
+
+.header__title_tablet {
+    display: none;
+}
+
 .sections-title {
     text-align: center;
     font-family: "MontserratB", Arial, Helvetica, sans-serif;
@@ -212,3 +217,78 @@ ol {
     background-color: #4e73db;
 }
 
+
+@media (min-width: 768px) {
+    .container {
+        width: 660px;
+    }
+
+    .header__title_tablet {
+        display: block;
+    }
+
+    .header__title_mobile {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 160px;
+
+    }
+    .header {
+        display: block;
+        padding-top: 40px;
+        height: 700px;
+        background-image: url(/img/fontable.png);
+        margin: 0;
+        margin-bottom: 75px;
+    }
+    .header__title {
+        margin: 0;
+    }
+    .header__list {
+        margin: 0;
+        padding: 0;
+    }
+    .sub-title {
+        font-size: 52px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 42px;
+
+    }
+    .header__subtitle {
+        font-size: 24px;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .header__btn {
+        width: 226px;
+        height: 40px;
+    }
+    .sections-title {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .team__list-item-text {
+        margin: 0;
+        margin-bottom: 60px;
+    }
+      .team__list-information {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          
+      }
+      .team__list-item {
+          width: 240px;
+          padding: 0 10px;
+          
+      }
+
+    
+
+}
