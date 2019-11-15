@@ -3,16 +3,16 @@
     font-style: normal;
     font-weight: 700;
     src: local('Montserrat Bold'), local('Montserrat-Bold'),
-        url("/fonts/montserrat-v14-latin-700.woff") format("woff"),
-        url("/fonts/montserrat-v14-latin-700.woff2") format("woff2");
+        url("../fonts/montserrat-v14-latin-700.woff") format("woff"),
+        url("../fonts/montserrat-v14-latin-700.woff2") format("woff2");
 }
 @font-face {
     font-family: "Roboto Slab";
     font-style: normal;
     font-weight: 400;
     src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
-        url("/fonts/roboto-slab-latin-regular.woff") format('woff'),
-        url("/fonts/roboto-slab-latin-regular.woff2") format('woff2');
+        url("../fonts/roboto-slab-latin-regular.woff") format('woff'),
+        url("../fonts/roboto-slab-latin-regular.woff2") format('woff2');
 }
 * {
     margin: 0;
@@ -54,7 +54,7 @@ ol {
 .header {
     display: block;
     margin: 0 auto;
-    background-image: url(/img/fo.png);
+    background-image: url("../img/fo.png");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -200,19 +200,19 @@ ol {
     
 }
 .team__list-item:nth-child(1)::after {
-    background-image: url(/img/tv.png);
+    background-image: url("../img/tv.png");
     background-color: #ff4e50;
 }
 .team__list-item:nth-child(2)::after {
-    background-image: url(/img/bulb.png);
+    background-image: url("../img/bulb.png");
     background-color: #ffa507;
 }
 .team__list-item:nth-child(3)::after {
-    background-image: url(/img/coffee.png);
+    background-image: url("../img/coffee.png");
     background-color: #1cd7ad;
 }
 .team__list-item:nth-child(4)::after {
-    background-image: url(/img/air.png);
+    background-image: url("../img/air.png");
     background-color: #4e73db;
 }
 
@@ -241,7 +241,7 @@ ol {
         display: block;
         padding-top: 40px;
         height: 700px;
-        background-image: url(/img/fontable.png);
+        background-image: url("../img/fontable.png");
         margin: 0;
         margin-bottom: 75px;
     }
@@ -305,7 +305,7 @@ ol {
     .header {
         margin: 0;
         margin-bottom: 72px;
-        background-image: url(/img/fondesktop.png);
+        background-image: url("../img/fondesktop.png");
     }
     .container {
         width: 940px;
