@@ -195,8 +195,8 @@ ol {
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
-    top: 90px;
-    right: 30px;
+    top: 80px;
+    right: 50px;
     
 }
 .team__list-item:nth-child(1)::after {
@@ -218,6 +218,11 @@ ol {
 
 
 @media (min-width: 768px) {
+    .team__list-item::after {
+    top: 80px;
+    right: 30px;
+
+    }
     .container {
         width: 660px;
     }
@@ -302,6 +307,7 @@ ol {
 }
 
 @media (min-width: 1300px) {
+    
     .header {
         margin: 0;
         margin-bottom: 72px;
