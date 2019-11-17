@@ -3,31 +3,33 @@
     font-style: normal;
     font-weight: 700;
     src: local('Montserrat Bold'), local('Montserrat-Bold'),
-        url("/fonts/montserrat-v14-latin-700.woff") format("woff"),
-        url("/fonts/montserrat-v14-latin-700.woff2") format("woff2");
+        url("../fonts/montserrat-v14-latin-700.woff") format("woff"),
+        url("../fonts/montserrat-v14-latin-700.woff2") format("woff2");
 }
 @font-face {
     font-family: "Roboto Slab";
     font-style: normal;
     font-weight: 400;
     src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
-        url("/fonts/roboto-slab-latin-regular.woff") format('woff'),
-        url("/fonts/roboto-slab-latin-regular.woff2") format('woff2');
+        url("../fonts/roboto-slab-latin-regular.woff") format('woff'),
+        url("../fonts/roboto-slab-latin-regular.woff2") format('woff2');
 }
 * {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
-}
-
-html {
     box-sizing: border-box;
 }
-
-a {
-    display: block;
-    text-decoration: none;
+@viewport {
+    width: device-width;
+    zoom: 1;
 }
+.container {
+    min-width: 300px;
+    max-width: 940px;
+    margin: 0 auto;
+
+}
+
 
 img {
     display: block;
@@ -35,59 +37,56 @@ img {
     height: auto;
 }
 
-ul,
-ol {
+picture {
+    display: block;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+
+ul {
     list-style: none;
 }
 
-.clearfix::after {
-    display: table;
-    content: "";
-    clear: both;
-}
 
-.container {
-    width: 285px;
-    margin: 0 auto;
-}
-/* HEADER */
 .header {
     display: block;
     margin: 0 auto;
-    background-image: url(/img/fo.png);
+    background-image: url(../img/fo.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    height: 540px;
+    background-color: black;
+    justify-content: space-between;
+    padding-bottom: 140px;
     margin-bottom: 70px;
 }
-.header__list {
-    display: flex;
-    justify-content: center;
-    padding-top: 32px;
-    margin-bottom: 120px;
+.header__navigation-list-item {
+    width: 100px;
+    height: 40px;
 }
-.header__list-item:hover {
+.header-navigation {
+    padding-top: 20px;
+    padding-bottom: 120px;
+}
+.header__list-link:hover {
     border: 2px solid #ffffff;
     border-radius: 30px;
 }
-.header__list-item {
+.header__list-link {
     width: 90px;
     height: 40px;
     text-align: center;
     padding-top: 8px;
-}
-.header {
-    background-color: black;
-}
-.header__list-link {
     color: #ffffff;
     font-family: "MontserratB", Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 14px;
 }
-.header__title {
-    margin: 0;
+.header__title_mobile {
     text-align: center;
     color: #ffffff;
     font-size: 20px;
@@ -102,7 +101,6 @@ ol {
     font-weight: 700;
     font-family: "MontserratB", Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    padding-bottom: 20px;
 }
 .header__subtitle {
     text-align: center;
@@ -129,11 +127,6 @@ ol {
     border: 2px solid #ff4e50;
     border-radius: 30px;
 }
-
-.header__title_tablet {
-    display: none;
-}
-
 .sections-title {
     text-align: center;
     font-family: "MontserratB", Arial, Helvetica, sans-serif;
@@ -165,7 +158,6 @@ ol {
     margin-bottom: 30px;
 }
 .slider__button {
-    margin: 0 auto;
     padding: 0;
     border: 0;
     display: block;
@@ -182,6 +174,9 @@ ol {
     border-radius: 30px;
     margin-bottom: 58px;
 }
+.slider__btn {
+    margin: 0 auto;
+}
 .team__list-item {
     position: relative;
 }
@@ -195,139 +190,25 @@ ol {
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
-    top: 90px;
-    right: 70px;
+    top: 85px;
+    right: 45px;
     
 }
 .team__list-item:nth-child(1)::after {
-    background-image: url(/img/tv.png);
+    background-image: url("../img/tv.png");
     background-color: #ff4e50;
 }
 .team__list-item:nth-child(2)::after {
-    background-image: url(/img/bulb.png);
+    background-image: url("../img/bulb.png");
     background-color: #ffa507;
 }
 .team__list-item:nth-child(3)::after {
-    background-image: url(/img/coffee.png);
+    background-image: url("../img/coffee.png");
     background-color: #1cd7ad;
 }
 .team__list-item:nth-child(4)::after {
-    background-image: url(/img/air.png);
+    background-image: url("../img/air.png");
     background-color: #4e73db;
 }
 
 
-@media (min-width: 768px) {
-    .container {
-        width: 660px;
-    }
-
-    .header__title_tablet {
-        display: block;
-    }
-
-    .header__title_mobile {
-        display: none;
-    }
-
-    .navigation {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 160px;
-
-    }
-    .header {
-        display: block;
-        padding-top: 40px;
-        height: 700px;
-        background-image: url(/img/fontable.png);
-        margin: 0;
-        margin-bottom: 75px;
-    }
-    .header__title {
-        margin: 0;
-    }
-    .header__list {
-        margin: 0;
-        padding: 0;
-    }
-    .sub-title {
-        font-size: 52px;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 42px;
-
-    }
-    .header__subtitle {
-        font-size: 24px;
-        margin: 0;
-        margin-bottom: 40px;
-    }
-    .header__btn {
-        width: 226px;
-        height: 40px;
-    }
-    .sections-title {
-        margin: 0;
-        margin-bottom: 40px;
-    }
-    .team__list-item-text {
-        margin: 0;
-    }
-      .team__list-information {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          margin-bottom: 40px;
-          
-      }
-      .team__list-item {
-          width: 240px;
-          padding: 0 10px;
-          margin-bottom: 60px;
-          
-      }
-      .team__list-item:nth-child(n+2) {
-          margin-bottom: 0;
-      }
-
-      .slider__button {
-          margin: 0;
-          width: 200px;
-          height: 40px;
-          margin: 0 auto;
-          margin-bottom: 40px;
-      }
-}
-
-@media (min-width: 1300px) {
-    .header {
-        margin: 0;
-        margin-bottom: 72px;
-        background-image: url(/img/fondesktop.png);
-    }
-    .container {
-        width: 940px;
-    }
-    .sub-title {
-        margin: 0;
-        margin-bottom: 38px;
-    }
-    .header__subtitle {
-        font-size: 24px;
-        margin: 0;
-        margin-bottom: 38px;
-    }
-    .header__btn {
-        width: 228px;
-        height: 44px;
-    }
-    .sections-title {
-        margin: 0;
-        margin-bottom: 35px;
-    }
-.team__list-item {
-    width: 220px;
-}
-}  
