@@ -94,12 +94,7 @@ ol {
     color: #ffffff;
     text-transform: uppercase;
 }
-.header__list-link:hover::after{
-    opacity: 1;
-    width: 100%;
 
-
-}
 .header__list-elementSH {
     width: 30px;
     height: 30px;
@@ -236,6 +231,10 @@ ol {
     .social-list__item {
         position: relative;
         background-repeat: no-repeat;
+        background-color: #fce38a;
+        margin-left: 2px;
+        background-position: center;
+        
     }
     .slider__item-name {
         font-family: "Montserrat", Arial, sans-serif;
@@ -285,7 +284,7 @@ ol {
     width: 55px;
     height: 55px;
     background-repeat: no-repeat;
-    background-position: center;
+    
 
 }
 
