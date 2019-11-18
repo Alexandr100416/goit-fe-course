@@ -123,23 +123,23 @@ ol {
         
     }
     .services__list-item:first-child {
-        background-image: url(/img/1.png); 
+        background-image: url(../img/1.png); 
         margin-bottom: 100px;
     }
     .services__list-item:nth-child(2) {
-        background-image: url(/img/2.png)
+        background-image: url(../img/2.png)
     }
     .services__list-item:nth-child(3) {
-        background-image: url(/img/3.png); 
+        background-image: url(../img/3.png); 
     }
     .services__list-item:nth-child(4) {
-        background-image: url(/img/4.png)
+        background-image: url(../img/4.png)
     }
     .services__list-item:nth-child(5) {
-        background-image: url(/img/5.png); 
+        background-image: url(../img/5.png); 
     }
     .services__list-item:nth-child(6) {
-        background-image: url(/img/6.png); 
+        background-image: url(../img/6.png); 
     }
     .services__list-item:last-child {
         margin-right: 0;
@@ -239,7 +239,7 @@ ol {
     background-color: #95e1d3;
 }
 .social-list__item:first-child {
-    background-image: url(/img/facebook.png);
+    background-image: url(../img/facebook.png);
 }
 .social-list__item:nth-child(2) {
     background-image:url(../img/twitter.png)
