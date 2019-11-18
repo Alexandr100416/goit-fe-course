@@ -106,12 +106,16 @@ ol {
     background-image: url(../img/SHOPPING.svg);
     background-repeat: no-repeat;
 }
+
+
 .header__list-elementMAG {
     width: 30px;
     height: 30px;
     background-image: url(../img/MAGNIFYING.svg);
     background-repeat: no-repeat;
 }
+
+
 .header__list-link::after {
     margin-top: 14px;
     content: "";
