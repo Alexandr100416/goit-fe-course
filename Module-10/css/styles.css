@@ -237,21 +237,41 @@ ol {
 
 }
 
-
 .social-list__link:hover {
     background-color: #95e1d3;
 }
 .social-list__item:first-child {
-    background-image: url(../img/facebook.png);
+    background-image: url(../img/facebook.svg);
+}
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .social-list__item:first-child {
+        background-image: url(../img/facebook@2x.svg);
+    }
 }
 .social-list__item:nth-child(2) {
-    background-image:url(../img/twitter.png)
+    background-image:url(../img/twitter.svg)
+}
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .social-list__item:nth-child(2) {
+        background-image: url(../img/twitter@2x.svg);
+    }
 }
 .social-list__item:nth-child(3) {
-    background-image:url(../img/pinterest.png)
+    background-image:url(../img/pinterest.svg)
+}
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .social-list__item:nth-child(3) {
+        background-image: url(../img/pinterest@2x.svg);
+    }
 }
 .social-list__item:nth-child(4) {
-    background-image:url(../img/instagram.png)
+    background-image:url(../img/instagram.svg)
+}
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .social-list__item:nth-child(4) {
+        background-image: url(../img/instagram@2x.svg);
+    }
+
 }
 
 .slider__team-list {
