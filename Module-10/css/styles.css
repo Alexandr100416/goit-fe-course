@@ -127,9 +127,7 @@ ol {
     transition: width 0.2s ease-in-out;
     
     }
-    .header__list-link:hover {
-        color: #fce38a;
-    }
+    
     .services {
         padding-bottom: 100px;
     }
