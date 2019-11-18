@@ -127,7 +127,7 @@ ol {
         margin-bottom: 100px;
     }
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-       .icon {
+       .services__list-item:first-child {
         background-image: url(../img/ALARM@2x.png); 
        }
     }
@@ -135,7 +135,7 @@ ol {
         background-image: url(../img/LINE\ GRAPH.png)
     }
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .icon {
+        .services__list-item:nth-child(2) {
          background-image: url(../img/LINE\ GRAPH@2x.png); 
         }
     }
@@ -143,7 +143,7 @@ ol {
         background-image: url(../img/COMPUTER\ _\ OK.png); 
     }
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .icon {
+        .services__list-item:nth-child(3) {
          background-image: url(../img/COMPUTER@2x.png); 
         }
     }
@@ -151,7 +151,7 @@ ol {
         background-image: url(../img/BOOK\ 2.png)
     }
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .icon {
+        .services__list-item:nth-child(4) {
          background-image: url(../img/BOOK@2x.png); 
         }
     }
@@ -159,7 +159,7 @@ ol {
         background-image: url(../img/HOME.png); 
     }
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .icon {
+        .services__list-item:nth-child(5) {
          background-image: url(../img/HOME@2x.png); 
         }
     }
@@ -167,7 +167,7 @@ ol {
         background-image: url(../img/IMAGE.png); 
     }
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .icon {
+        .services__list-item:nth-child(6) {
          background-image: url(../img/IMAGE@2x.png); 
         }
     }
