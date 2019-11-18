@@ -16,10 +16,12 @@
     
     <header class="header">
         <div class="container">
-            <div class="row justify-content-center header-navigation">
+            <div class="row justify-content-md-between justify-content-xl-between header-navigation">
 <!-- NAVIGATION -->
-                <a href="#" class="logotype d-none">urlaubsglück</a>
-                <ul class="row justify-content-between header__navigation-list ">
+            <div class="col-md-4 col-xl-3 justify-content: flex-start">
+                <a href="#" class="header__title header__title_tablet">urlaubsglück</a>
+            </div>
+                <ul class="row col-md-4 col-xl-3 justify-content-center header__navigation-list ">
                     <li class="header__navigation-list-item">
                         <a href="#" class="header__list-link">Log in</a>
                     </li>
@@ -30,8 +32,8 @@
                     </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-9">
-                        <a href="#" class="logotype header__title_mobile">urlaubsglück</a>
+                <div class="col-9 col-xl-5">
+                        <a href="#" class="header__title header__title_mobile">urlaubsglück</a>
                         <h1 class="sub-title">share your holiday dreams</h1>
                         <p class="header__subtitle">And find the perfect partner to fullfill it</p>
                         <button class="header__btn">Find your holiday partner</button>
@@ -46,9 +48,13 @@
         <section class="team-list">
             <div class="container">
             <div class="row justify-content-center">
-            <div class="col-9">
+            
+            <div class="col-12">
                 <h2 class="sections-title">Meet a partner for your best holiday</h2>
-        <ul class="team__list-information">
+            </div>
+
+            <div class="col-9 col-md-10">
+        <ul class="row justify-content-md-center team__list-information">
             <li class="team__list-item">
                 
                 <img src="./img/bradley.jpeg" alt="Bradley Hunter" class="photo-team" width="126px" height="126px">
@@ -78,13 +84,14 @@
                 <p class="team__list-item-text">Based in Chicago. I love playing tennis and loud music.</p>
             </li>
         </ul>
-        <div class="slider__btn">
-                <button class="slider__button">See other partners</button>
-        </div>
     </div>
-</div>
-            </div>
-        </section>
+               <div class="slider__btn">
+                <button class="slider__button">See other partners</button>
+               </div>
+         </div>
+       </div>
+
+    </section>
     </main>
     
 </body>

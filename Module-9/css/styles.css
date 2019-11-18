@@ -60,7 +60,6 @@ ul {
     background-position: center top;
     background-size: cover;
     background-color: black;
-    justify-content: space-between;
     padding-bottom: 140px;
     margin-bottom: 70px;
 }
@@ -209,6 +208,126 @@ ul {
 .team__list-item:nth-child(4)::after {
     background-image: url("../img/air.png");
     background-color: #4e73db;
+}
+.header__title_tablet {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .team__list-item::after {
+    top: 80px;
+    right: 30px;
+    }
+    .header__title_tablet {
+        display: block;
+    }
+
+    .header__title_mobile {
+        display: none;
+    }
+
+    .header__title_tablet {
+       text-align: center;
+       color: #ffffff;
+       font-size: 20px;
+       font-weight: 700;
+       font-family: "MontserratB", Arial, Helvetica, sans-serif;
+       text-transform: uppercase;
+    }
+    .header {
+        display: block;
+        padding-top: 40px;
+        height: 700px;
+        background-image: url("../img/fontable.png");
+        margin: 0;
+        margin-bottom: 75px;
+    }
+    .header__title {
+        margin: 0;
+    }
+    .header__list {
+        margin: 0;
+        padding: 0;
+    }
+    .sub-title {
+        font-size: 52px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 42px;
+
+    }
+    .header__subtitle {
+        font-size: 24px;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .header__btn {
+        width: 226px;
+        height: 40px;
+    }
+    .sections-title {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .team__list-item-text {
+        margin: 0;
+    }
+      .team__list-information {
+          /* display: flex;
+          flex-wrap: wrap;
+          justify-content: center; */
+          margin-bottom: 40px;
+          
+      }
+      .team__list-item {
+          width: 240px;
+          padding: 0 10px;
+          margin-bottom: 60px;
+          
+      }
+      .team__list-item:nth-child(n+2) {
+          margin-bottom: 0;
+      }
+
+      .slider__button {
+          margin: 0;
+          width: 200px;
+          height: 40px;
+          margin: 0 auto;
+          margin-bottom: 40px;
+      }
+}
+
+@media (min-width: 1300px) {
+    /* .header__navigation-list {
+    text-align: right;
+} */
+    
+    .header {
+        margin: 0;
+        margin-bottom: 72px;
+        background-image: url("../img/Desktop.png");
+    }
+    .sub-title {
+        margin: 0;
+        margin-bottom: 38px;
+    }
+    .header__subtitle {
+        font-size: 24px;
+        margin: 0;
+        margin-bottom: 38px;
+    }
+    .header__btn {
+        width: 228px;
+        height: 44px;
+    }
+    .sections-title {
+        margin: 0;
+        margin-bottom: 35px;
+    }
+.team__list-item {
+    width: 220px;
+}
 }
 
 
