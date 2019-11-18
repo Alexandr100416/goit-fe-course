@@ -74,7 +74,7 @@ ol {
     font-family: "Montserrat", Arial, sans-serif ;
     font-size: 30px;
     font-weight: 700px;
-    color: #95e1d3;
+    color: #ffffff;
 }
 .navigation {
     display: flex;
@@ -91,7 +91,7 @@ ol {
     font-family: "Montserrat", Arial, sans-serif ;
     font-size: 14px;
     font-weight: 400px;
-    color: #95e1d3;
+    color: #ffffff;
     text-transform: uppercase;
 }
 .header__list-link:hover::after{
@@ -100,7 +100,18 @@ ol {
 
 
 }
-    
+.header__list-elementSH {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/SHOPPING.svg);
+    background-repeat: no-repeat;
+}
+.header__list-elementMAG {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/MAGNIFYING.svg);
+    background-repeat: no-repeat;
+}
 .header__list-link::after {
     margin-top: 14px;
     content: "";
@@ -108,12 +119,12 @@ ol {
     display: block;
     height: 3px;
     width: 0;
-    background: #ec4444;
+    background: #fce38a;
     transition: width 0.2s ease-in-out;
     
     }
     .header__list-link:hover {
-        color: #ec4444;
+        color: #fce38a;
     }
     .services {
         padding-bottom: 100px;
