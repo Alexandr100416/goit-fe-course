@@ -289,7 +289,8 @@ ol {
 }
 
 .social-list__link:hover {
-    background-color: #95e1d3;
+    border: 5px solid #f38181;
+
 }
 .social-list__item:first-child {
     background-image: url(../img/facebook.svg);
