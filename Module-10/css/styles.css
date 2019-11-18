@@ -34,10 +34,13 @@ ol {
     background-image: url(../img/Layer15.jpg);
     padding-bottom: 230px;
     background-repeat: no-repeat;
+    background-size: cover;
+
 }
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .header {
         background-image: url(../img/Layer15@2x.jpg);
+
     }
 }
 .text-welcome {
