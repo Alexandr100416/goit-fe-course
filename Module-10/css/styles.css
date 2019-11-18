@@ -123,54 +123,27 @@ ol {
         
     }
     .services__list-item:first-child {
-        background-image: url(../img/ALARM.png); 
+        background-image: url(../img/ALARM.svg);
         margin-bottom: 100px;
     }
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-       .services__list-item:first-child {
-        background-image: url(../img/ALARM@2x.png); 
-       }
-    }
     .services__list-item:nth-child(2) {
-        background-image: url(../img/LINE\ GRAPH.png)
+        background-image: url(../img/LINE\ GRAPH.svg)
     }
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .services__list-item:nth-child(2) {
-         background-image: url(../img/LINE\ GRAPH@2x.png); 
-        }
-    }
+  
     .services__list-item:nth-child(3) {
-        background-image: url(../img/COMPUTER\ _\ OK.png); 
-    }
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .services__list-item:nth-child(3) {
-         background-image: url(../img/COMPUTER@2x.png); 
-        }
+        background-image: url(../img/COMPUTER\ _\ OK.svg); 
     }
     .services__list-item:nth-child(4) {
-        background-image: url(../img/BOOK\ 2.png)
-    }
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .services__list-item:nth-child(4) {
-         background-image: url(../img/BOOK@2x.png); 
-        }
+        background-image: url(../img/BOOK\ 2.svg)
     }
     .services__list-item:nth-child(5) {
-        background-image: url(../img/HOME.png); 
+        background-image: url(../img/HOME.svg); 
     }
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .services__list-item:nth-child(5) {
-         background-image: url(../img/HOME@2x.png); 
-        }
-    }
+    
     .services__list-item:nth-child(6) {
-        background-image: url(../img/IMAGE.png); 
+        background-image: url(../img/IMAGE.svg); 
     }
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .services__list-item:nth-child(6) {
-         background-image: url(../img/IMAGE@2x.png); 
-        }
-    }
+    
     .services__list-item:last-child {
         margin-right: 0;
     }
