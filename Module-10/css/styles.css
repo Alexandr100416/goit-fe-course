@@ -31,6 +31,44 @@ ol {
 /*  HEADER-navigation */
 .header {
     margin-bottom: 50px;
+    background-image: url(../img/Layer15.jpg);
+    padding-bottom: 230px;
+    background-repeat: no-repeat;
+}
+.text-welcome {
+    font-size: 150px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Montserrat", Arial, sans-serif ;
+    font-weight: 700px;
+    text-align: center;
+    margin-bottom: 130px;
+}
+.nav-elemrnt {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 160px;
+    height: 40px;
+    background-color: unset;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 0 auto;
+    display: block;
+    
+    
+}
+.second-text {
+    text-align: center;
+    font-size: 72px;
+    color: #ffffff;
+    font-family: "Kaushan Script", Arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 60px;
 }
 .logo {
     font-family: "Montserrat", Arial, sans-serif ;
@@ -42,6 +80,7 @@ ol {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
 }
 .header__list {
     display: flex;
