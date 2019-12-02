@@ -6,6 +6,7 @@ function home4()
     let pricePerDroid = 3000;
     let totalPrice;
     let maseeage = prompt ("Какое количество дроидов нужно купить");
+    alert (maseeage);
     if (maseeage === null) {
         alert ("Отменено пользователем!");
     } else if (credits > pricePerDroid) {
