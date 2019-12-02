@@ -3,9 +3,10 @@
 function home2() {
   const total = 100;
   const ordered = 50;
-  if (total < ordered) {
-    alert("На складе недостаточно твоаров!");
+  let maseeage = prompt("Введите количество товара");
+  if (maseeage <= total || total <= ordered ) {
+    alert("Заказ оформлен, с вами свяжется менеджер!");
   } else {
-    alert("Заказ оформлен, с вами свяжется менеджер");
+    alert("На складе недостаточно твоаров!");
   }
 }
