@@ -1,14 +1,11 @@
 "use strict";
 
-function home2()
-{
-const total = 100;
-const ordered = 50;
-if (total<ordered) {
+function home2() {
+  const total = 100;
+  const ordered = 50;
+  if (total < ordered) {
     alert("На складе недостаточно твоаров!");
-}
-else {
+  } else {
     alert("Заказ оформлен, с вами свяжется менеджер");
-}
-
+  }
 }
