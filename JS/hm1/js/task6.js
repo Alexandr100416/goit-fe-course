@@ -23,5 +23,5 @@ else {
 }
     }while (true);
     //Когда нажал Cansel
-    console.log(`Cумма операций равна $(total); Количество итераций $(numOfIteration)!`);
+    alert(`Cумма операций равна ${total}; Количество итераций ${numOfIteration}!`);
 }
