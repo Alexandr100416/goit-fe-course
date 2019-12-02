@@ -11,7 +11,7 @@ function home6()
 inputMessage = prompt(`Введите число!`);
 if (inputMessage === null)
 {
-    break
+break;
     }
 if (!isNaN(Number(inputMessage)))
 {
