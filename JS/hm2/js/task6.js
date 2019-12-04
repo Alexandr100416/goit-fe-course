@@ -1,9 +1,22 @@
 "use strict";
-function home6()
-{
-    let input;
-    do {
-        input = prompt ("Hello");
-        console.log (input);
-    } while (input!==null);
+function home6() {
+  let inputMessage;
+  let total = 0;
+  let numOfIteration = 0;
+
+  do {
+    inputMessage = prompt(`Введите число!`);
+    if (inputMessage === null) {
+      break;
+    }
+    if (!isNaN(Number(inputMessage))) {
+      total += Number(inputMessage);
+      numOfIteration++;
+    } else {
+      alert(Ошибка);
+    }
+  } while (true);
+  //Когда нажал Cansel
+  alert(
+    ("Общая сумма чисел равна ",total,+numOfIteration));
 }
