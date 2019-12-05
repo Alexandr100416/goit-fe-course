@@ -95,5 +95,4 @@ const Transaction = {
   
   console.log(account.getTransactionDetails(100));
   console.log(account.getTransactionTotal(Transaction.DEPOSIT));
-  console.log(account.getBalance());
-  
+  console.log(account.getBalance());  
