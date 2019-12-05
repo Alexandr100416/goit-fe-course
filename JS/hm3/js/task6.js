@@ -27,5 +27,5 @@ function home6() {
 
       console.log(calculateTotalPrice(products, 'Радар')); // 5200
       
-      console.log(calculateTotalPrice(products, 'Дроид')); // 2400
+      console.log(calculateTotalPrice(products, 'Дроид')); // 2800
 }
