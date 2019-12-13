@@ -7,14 +7,14 @@ function home4() {
     get value() {
       return this._value;
     }
-    set value(str){
-        this._value=str;
+    set value(str) {
+      this._value = str;
     }
     append(str) {
-      return this.value=this.value+str;
+      return (this.value = this.value + str);
     }
     prepend(str) {
-      return this.value = str + this.value;
+      return (this.value = str + this.value);
     }
     pad(str) {
       this.prepend(str);
