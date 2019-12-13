@@ -73,7 +73,7 @@ function home5() {
          * при условии что результирующая скорость не меньше нуля
          */
         decelerate(value) {
-            this.speed-=this.speed-value>=0?value:;
+            this.speed-=this.speed-value>=0?value:this.speed;
         }
       
         /*
