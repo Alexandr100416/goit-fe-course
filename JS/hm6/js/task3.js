@@ -1,3 +1,11 @@
+import users from "./users.js";
 "use strict";
-function home2() {
-}
+
+// Получить массив имен пользователей по полу (поле gender).
+
+const getUsersWithGender = (users, gender) => {
+  
+    
+};
+
+console.log(getUsersWithGender(users, 'male'));

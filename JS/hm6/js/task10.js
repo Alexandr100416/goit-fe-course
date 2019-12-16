@@ -1,3 +1,14 @@
+import users from "./users.js";
 "use strict";
-function home2() {
-}
+
+
+    // Получить массив всех умений всех пользователей (поле skills), при этом не должно быть повторяющихся умений и они должны быть отсортированы в алфавитном порядке.
+
+    const getSortedUniqueSkills = users => {
+      
+        
+    };
+    
+    console.log(getSortedUniqueSkills(users));
+    
+
