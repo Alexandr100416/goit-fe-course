@@ -1,9 +1,6 @@
 "use strict";
 function home5() {
-
-
-
-    class Car {
+class Car {
         /*
          * Добавь статический метод `getSpecs(car)`,
          * который принимает объект-машину как параметр и выводит
