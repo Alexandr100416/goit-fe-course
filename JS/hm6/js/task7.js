@@ -1,10 +1,11 @@
+
 import users from "./users.js";
-"use strict";
+export function home7() {
+  // // // Задание 7
+  // // // Получить общую сумму баланса (поле balance) всех пользователей.
 
+  const calculateTotalBalance = users =>
+    users.reduce((totalBalance, user) => totalBalance + user.balance, 0);
 
-// Получить общую сумму баланса (поле balance) всех пользователей.
-
-const calculateTotalBalance = users => {return users.reduce((totalBalance,user)=>{totalBalance+=user.balance;},0)
-};
-
-console.log(calculateTotalBalance(users)); 
+  console.log(calculateTotalBalance(users)); // 20916
+}
