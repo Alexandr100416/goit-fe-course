@@ -1,9 +1,18 @@
 let counterValue = 0;
-function increment() {
-  counterValue += 1;
-  document.getElementById("value").innerHTML = counterValue;
+const btnPlus = document.querySelector(`#counter button[data-action="increment"]`);
+const btnMinus= document.querySelector(`#counter button[data-action="decrement"]`);
+const resultSpan = document.querySelector(`#value`);
+const reload = function(value) {
+  resultSpan.innerHTML = value;
+  console.log(value)
 }
-function decrement() {
-  counterValue -= 1;
-  document.getElementById("value").innerHTML = counterValue;
+const increment=function (){
+  counterValue ++;
+  reload (counterValue);
 }
+const decrement=function (){
+  counterValue --;
+  reload (counterValue);
+}
+btnPlus.addEventListener("click",increment);
+btnMinus.addEventListener("click",decrement);
