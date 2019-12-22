@@ -6,7 +6,7 @@ const ingredients = [
   "Зелень",
   "Приправы"
 ];
-const list = document.querySelector('ingredients');
+const list = document.querySelector('#js-ingredients');
   const addFragment = document.createDocumentFragment();
   ingredients.forEach((ingredient)=>{
     const newLi = document.createElement('li');
@@ -15,4 +15,3 @@ const list = document.querySelector('ingredients');
   });
   
   list.appendChild(addFragment);
-
