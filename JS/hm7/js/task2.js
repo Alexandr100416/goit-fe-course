@@ -6,16 +6,13 @@ const ingredients = [
   "Зелень",
   "Приправы"
 ];
-const products = document.getElementById("ingredients");
-// const item=document.createElement("li");
-// item.innerHTML="Картошка";
-// products.appendChild(item);
+const list = document.querySelector('ingredients');
+  const addFragment = document.createDocumentFragment();
+  ingredients.forEach((ingredient)=>{
+    const newLi = document.createElement('li');
+    newLi.textContent = ingredient;
+    addFragment.appendChild(newLi);
+  });
+  
+  list.appendChild(addFragment);
 
-const summ = ingredients.reduce(
-  (acc, value) => (acc += `<li>${value}</li>`),
-  ""
-);
-
-products.insertAdjacentHTML("afterbegin", summ);
-
-console.log(summ);
