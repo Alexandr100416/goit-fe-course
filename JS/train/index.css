@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: #f3f3f3;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #eee;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main.list {
+  width: 100%;
+  max-width: 768px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-top: 25px;
+}
+main.list.item {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+main.list.item:last-of-type {
+  border-bottom: none;
+}
+
+main.list.item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+.pagenumbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.pagenumbers button{
+  width: 50px;
+  height: 50px;
+
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  background-color: #44AAEE;
+
+  margin: 5px;
+  transition: 0.4s;
+
+  color:#FFF;
+  font-size:18px;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2)
+}
+.pagenumbers button:hover {
+background-color: #44EEAA;
+}
+.pagenumbers button.active{
+  background-color: #44EEAA;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2)
+}
+
+/* NUMBER#2
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #ee6e73;
+}
+
+.container {
+  width: 1170px;
+  margin: 50px auto;
+}
+#slider {
+  background: #1af277;
+  padding: 30px 0;
+}
+.slider-inner {
+  overflow: hidden;
+}
+.slider-wrapper {
+  overflow: hidden;
+  position: relative;
+  transform: translate3d(0px, 0px, 0px);
+  transition: 0.3s;
+}
+.slider-inner .item {
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.item:nth-child(2n-1) {
+  background: #fdeee0;
+}
+.item:nth-child(3n-1) {
+  background: #8e24aa;
+}
+.item:nth-child(4n-1) {
+  background: #ff8a80;
+}
+.item:nth-child(5n-1) {
+  background: #c51162;
+}
+.item {
+  background: #fdeee0;
+}
+
+.prev {
+  float: left;
+}
+
+.next {
+  float: right;
+}
+
+.pagination {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.pag-item {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #fff;
+  margin: 0 5px;
+}
+ */
+
+/* NUMBER#1 */
+/* .num {
+    display: none;
+  }
+  .paginator {
+    line-height: 150%;
+  }
+  .paginator > span {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .paginator_active {
+    color: red;
+  } */
