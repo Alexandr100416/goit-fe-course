@@ -4,7 +4,7 @@ function home3() {
     let a = 0;
     let b;
     for (let key in employees) {
-      if (employees[key] > a) {
+      if (employees[key] > a) { 
         a = employees[key];
         b = key;
       }

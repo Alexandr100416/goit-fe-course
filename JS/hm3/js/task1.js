@@ -6,11 +6,20 @@ function home1() {
     hobby: "html",
     premium: true
   };
-  user["mood"] = "happy";
-  user["hobby"] = "skydiving";
-  user["premium"] = false;
-  const keys = Object.keys(user);
-  for (const key of keys) {
-    console.log("Value: ", user[key]);
+  const secondUser = {
+    mood: "happy",
+    hobby: "skydiving",
+    premium: false
+  };
+  
+  const newElem = {
+    ...user,
+    ...secondUser
+  };
+  const finalArr = Object.keys(newElem);
+  for (let key of finalArr) {
+    const a = key;
+    const b = newElem[key];
+    console.log(`${a} : ${b}`);
   }
 }
