@@ -1,6 +1,6 @@
 "use strict";
 function home5() {
-class Car {
+    class Car {
         /*
          * Добавь статический метод `getSpecs(car)`,
          * который принимает объект-машину как параметр и выводит
@@ -17,33 +17,34 @@ class Car {
          *  isOn - заведен ли автомобиль, значения true или false. Изначально false
          *  distance - общий киллометраж, изначально 0
          */
-        constructor({speed,price,maxSpeed,isOn, distance = false, distance = 0}) {
-            this.speed=speed;  
-            this._price=price;
-            this.maxSpeed=maxSpeed;
-            this.isOn=isOn;
-            this.distance=distance;
+        constructor(values) {
+          this.maxSpeed = values.maxSpeed;
+          this.speed = 0;
+          this.isOn = false;
+          this.distance = 0;
+          this._price = values.price;
         }
+      
         static getSpecs(car) {
-          console.log (car.maxSpeed, car.speed, car.isOn, car.distance,car.price);
+          return console.log(car);
+        }
+        get price() {
+          return this._price;
+        }
+        set price(value) {
+          this._price = value;
         }
         /*
          * Добавь геттер и сеттер для свойства price,
          * который будет работать с свойством цены автомобиля.
          */
-      get price(){
-          return this._price;
-      }
-      set price (){
-          this._price=val;
-      }
+      
         /*
          * Добавь код для того чтобы завести автомобиль
          * Записывает в свойство isOn значение true
          */
         turnOn() {
-            this.isOn=true;
-            
+          this.isOn = true;
         }
       
         /*
@@ -52,8 +53,8 @@ class Car {
          * и сбрасывает текущую скорость в 0
          */
         turnOff() {
-            this.isOn=false;
-            this.speed=0;
+          this.isOn = false;
+          this.speed = 0;
         }
       
         /*
@@ -62,7 +63,11 @@ class Car {
          * не больше чем значение свойства maxSpeed
          */
         accelerate(value) {
-            this.speed+=this.speed+value<=this.maxSpeed?value:this.maxSpeed-this.speed;
+          this.value = value;
+          if (this.maxSpeed > this.value) {
+            this.speed += this.value;
+          }
+          return this.speed;
         }
       
         /*
@@ -70,7 +75,11 @@ class Car {
          * при условии что результирующая скорость не меньше нуля
          */
         decelerate(value) {
-            this.speed-=this.speed-value>=0?value:this.speed;
+          this.value = value;
+          if (this.value > 0) {
+            this.speed-=this.value;
+          }
+          return this.speed;
         }
       
         /*
@@ -78,12 +87,16 @@ class Car {
          * но только в том случае если машина заведена!
          */
         drive(hours) {
-            this.distance+=hours*this.speed;
+          this.hours = hours;
+          if (this.isOn === true) {
+            this.distance += this.hours * this.speed;
+          }
+          return this.distance;
         }
       }
-    Car.color={GREEN:"GREEN", RED:"RED"}
+      
       const mustang = new Car({ maxSpeed: 200, price: 2000 });
-      mustang.color=Car.colors.RED;
+      
       mustang.turnOn();
       mustang.accelerate(50);
       mustang.drive(2);
@@ -96,7 +109,7 @@ class Car {
       mustang.turnOff();
       
       Car.getSpecs(mustang);
-      // maxSpeed: 200, speed: 30, isOn: false, distance: 130, price: 2000
+      // maxSpeed: 200, speed: 0, isOn: false, distance: 130, price: 2000
       
       console.log(mustang.price); // 2000
       mustang.price = 4000;
